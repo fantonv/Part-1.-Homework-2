@@ -15,17 +15,19 @@ public class Main {
         int u = 0;
         while (u < 10){
             u = u +1;
-            System.out.println(u);
+            System.out.print(u + " ");
         }
-        for (int y = 10; y >= 0; y = y - 1){
-            System.out.println(y);
+        System.out.println();
+        for (int y = 10; y > 0; y = y - 1){
+            System.out.print(y + " ");
         }
+        System.out.println();
 
         //task 3
         int totalHuman = 12_000_000;
-        int totalDied = totalHuman / 1000 * 8;
-        int totalBorn = totalHuman / 1000 * 17;
         for (int t = 1; t <= 10; t++){
+            int totalDied = totalHuman / 1000 * 8;
+            int totalBorn = totalHuman / 1000 * 17;
             totalHuman = totalHuman - totalDied + totalBorn;
             System.out.println("Год " + t + " численность населения составляет " + totalHuman);
         }
